@@ -4,6 +4,7 @@
 /* uncomment and then modify lines behind //-- if there are images
     of different format other than .jpg */
 ?>
+
 <?php
 ///////////////////Thank Jerry Lopez for this function///////////////////
 function csv_to_array($filename='', $delimiter=',')
@@ -63,9 +64,7 @@ function imageRename($oldSid, $newSid){
        
         ////$i++;
     }
-
     echo "Images no longer found moving on to the next.\n";
-
 }
 
 $styles = csv_to_array('styles.csv', ',');
@@ -78,7 +77,5 @@ foreach($styles as $style){
     imageRename($oldSid, $newSid);
 
 }
-
-
 
 ?>
