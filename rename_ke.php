@@ -5,6 +5,7 @@
     of different format other than .jpg */
 ?>
 <?php
+///////////////////Thank Jerry Lopez for this function///////////////////
 function csv_to_array($filename='', $delimiter=',')
 {
     if(!file_exists($filename) || !is_readable($filename))
